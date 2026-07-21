@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page not found — Building Schools in the Cloud</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+  <link rel="icon" type="image/svg+xml" href="/novacene-logo.svg">
+  <script>
+    // Redirect old GoDaddy-era blog URLs (/blog/f/<slug>) to the new static pages
+    (function () {
+      var m = location.pathname.match(/^\/blog\/f\/(.+?)\/?$/);
+      if (!m) return;
+      var slug = decodeURIComponent(m[1]).toLowerCase();
+      var map = {
+        '🧠-mnemonic-attendance-measuring-presence-as-resonance': 'mnemonic-attendance',
+        'why-your-attendance-dashboard-isn’t-the-work-and-what-is': 'why-your-attendance-dashboard-isnt-the-work',
+        'how-a-“school-in-the-cloud”-model-scales-without-losing-its-soul': 'how-a-school-in-the-cloud-model-scales'
+      };
+      var target = map[slug] || slug;
+      location.replace('/blog/' + target + '.html');
+    })();
+  </script>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <span class="brand"><a href="https://thenovacene.com/" aria-label="The Novacene"><img src="/novacene-logo.svg" alt="The Novacene" class="brand-logo"></a><a href="/">Building Schools in the Cloud</a></span>
+    <nav class="site-nav">
+      <a href="/blog/">Blog</a>
+      <a href="https://calendly.com/thenovacene/meet-with-kirstin" class="btn btn-accent">Book a call</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <p class="kicker">404</p>
+      <h1>This page has moved to the cloud.</h1>
+      <p class="lede">The page you're after isn't here any more — it may have lived on the old site. Try the <a href="/">home page</a> or the <a href="/blog/">blog</a>.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="legal">
+      <p>© 2026 The Novacene Ltd · Building Schools in the Cloud · <a href="/">Home</a> · <a href="/blog/">Blog</a> · <a href="mailto:hello@thenovacene.com">hello@thenovacene.com</a></p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
