@@ -1,0 +1,7 @@
+
+/* ---------- Post images (added with LinkedIn archive import) ---------- */
+article.post .post-body img {
+  max-width: 100%; height: auto;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
