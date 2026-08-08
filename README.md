@@ -6,3 +6,4 @@ Static site for [buildingschoolsinthecloud.com](https://buildingschoolsintheclou
 - `blog/` — static blog (23 posts rescued from the previous GoDaddy site)
 - `style.css` — shared Novacene design language (schools-blue accent)
 - `CNAME` — custom domain for GitHub Pages
+
